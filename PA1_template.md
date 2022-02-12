@@ -60,7 +60,7 @@ install.packages("ggpubr", repos = "http://cran.us.r-project.org")
 ## package 'ggpubr' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\lunaa\AppData\Local\Temp\RtmpWqaSLM\downloaded_packages
+## 	C:\Users\lunaa\AppData\Local\Temp\Rtmpye46ny\downloaded_packages
 ```
 
 ```r

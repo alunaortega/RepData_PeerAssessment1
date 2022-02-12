@@ -38,7 +38,7 @@ total_number_of_steps_taken_per_day <- activity %>%
   summarise(steps = sum(steps, na.rm = TRUE))
 ```
 Make a histogram of the total number of steps taken each day:
-```{r}
+```{r echo=TRUE}
 hist(total_number_of_steps_taken_per_day$steps, main = "Total number of steps taken per day", xlab = "Steps taken per day", breaks = seq(0,25000, by =1000))
 ```
 
