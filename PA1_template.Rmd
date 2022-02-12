@@ -7,6 +7,11 @@ output:
   html_document:
     keep_md: true
 ---
+
+```{r global_options}
+knitr::opts_chunk$set(fig.path='Figs/')
+```
+
 ## Set up packages and libraries
 
 ```{r}

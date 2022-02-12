@@ -7,6 +7,12 @@ output:
   html_document:
     keep_md: true
 ---
+
+
+```r
+knitr::opts_chunk$set(fig.path='Figs/')
+```
+
 ## Set up packages and libraries
 
 
@@ -60,7 +66,7 @@ install.packages("ggpubr", repos = "http://cran.us.r-project.org")
 ## package 'ggpubr' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\lunaa\AppData\Local\Temp\Rtmpye46ny\downloaded_packages
+## 	C:\Users\lunaa\AppData\Local\Temp\RtmpIRZdFh\downloaded_packages
 ```
 
 ```r
@@ -95,7 +101,7 @@ Make a histogram of the total number of steps taken each day:
 hist(total_number_of_steps_taken_per_day$steps, main = "Total number of steps taken per day", xlab = "Steps taken per day", breaks = seq(0,25000, by =1000))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](Figs/unnamed-chunk-4-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -137,7 +143,7 @@ tsp<- ggplot(average_daily_activity_pattern,aes(x=interval,y=steps)) + geom_line
 tsp
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](Figs/unnamed-chunk-8-1.png)<!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -192,7 +198,7 @@ total_number_of_steps_taken_per_day <- activity_imputed %>%
 hist(total_number_of_steps_taken_per_day$steps, main = "Total number of steps taken per day", xlab = "Steps taken per day", breaks = seq(0,25000, by =1000))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](Figs/unnamed-chunk-12-1.png)<!-- -->
 
 The mean is:
 
@@ -257,4 +263,4 @@ figure <- ggarrange(ts_weekday, ts_weekend, ncol=1,nrow=2)
 figure
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](Figs/unnamed-chunk-16-1.png)<!-- -->
